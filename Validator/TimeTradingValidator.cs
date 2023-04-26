@@ -14,8 +14,6 @@ namespace ADACA.Validator
             return result;
         }
 
-        protected override string ErrorMessage() => "'{PropertyName}' is not valid.";
-
         private bool isValid(string value)
         {
             if (int.TryParse(value, out var intValue))

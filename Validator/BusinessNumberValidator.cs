@@ -12,8 +12,6 @@ namespace ADACA.Validator
             return await isValidAsync(value);
         }
 
-        protected override string ErrorMessage() => "'{PropertyName}' is not valid.";
-
         private async Task<bool> isValidAsync(string value)
         {
             var result = await isValid(value);

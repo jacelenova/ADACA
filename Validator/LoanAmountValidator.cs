@@ -14,8 +14,6 @@ namespace ADACA.Validator
             return result;
         }
 
-        protected override string ErrorMessage() => "'{PropertyName}' is not valid.";
-
         private bool isValid(decimal value)
         {
             return value > MIN_LOAN_EXCLUSIVE && value < MAX_LOAN_EXCLUSIVE;

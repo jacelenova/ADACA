@@ -13,8 +13,6 @@ namespace ADACA.Validator
             return result;
         }
 
-        protected override string ErrorMessage() => "'{PropertyName}' is not valid.";
-
         private bool isValid(string value)
         {
             if (string.IsNullOrEmpty(value)) return true;
